@@ -1,0 +1,57 @@
+.todoButton1 {
+    border: none;
+    border-radius: 35px;
+    background-color:olive;
+    color:antiquewhite;
+    font-size: 72px;
+    text-align: center;
+    width: 350px;
+    height: 80px;
+    position: fixed;
+    bottom: 35px;
+    right: calc(50% - 175px);
+    z-index: 2;
+    overflow: visible;
+    transition: transform 0.5s ease-in-out;
+}
+
+.todoButton2 {
+    border: none;
+    border-radius: 50%;
+    background-color: green;
+    color:blanchedalmond;
+    padding: 0px;
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 55px;
+    right: 35px;
+    z-index: 2;
+    transition: transform 0.5s ease-in-out;
+}
+
+.todoButton3 {
+    border: none;
+    border-radius: 50%;
+    background-color:rgb(127, 206, 9);
+    color:beige;
+    padding: 0px;
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    bottom: 45px;
+    right: calc(50% - 45px);
+    z-index: 2;
+    transition: transform 0.5s ease-in-out;
+}
+
+.todoButton3:hover, .todoButton2:hover, .todoButton1:hover {
+    color:beige;
+    transform: scale(1.5);
+}  

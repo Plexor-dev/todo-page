@@ -1,0 +1,42 @@
+.inputSearchContainer {
+    display: flex;
+    place-content: center;
+    width: 100%;
+}
+
+.todoSearch {
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    border: 1px solid transparent;
+}
+
+.todoSearch::placeholder {
+    color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+.todoSearch:hover {
+    border: 1px solid blueviolet;
+}
+
+.todoSearch:focus {
+    outline-color: blueviolet;
+}
+
+input[type="search"] {
+    padding-left: 25px;
+}
+
+@media (min-width: 1025px) {
+    .todoSearch {
+        width: 80%;
+    }
+  }
+

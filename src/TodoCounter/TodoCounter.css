@@ -1,0 +1,51 @@
+.todoCountContainer {
+    font-size: 12px;
+    padding: 20px;
+}
+
+.todoCount1 {
+color: #1b1b1b;
+}
+
+.todoCount1 span {
+    color: rgb(141, 179, 3);
+    }
+
+.todoCount1 span + span {
+    color: rgb(4, 136, 4);
+    }
+
+
+.todoCount2 {
+    color: #13081b;
+}
+
+.todoCount2 span {
+    color: rgb(185, 7, 7);
+    }
+
+.todoCount2 span + span {
+    color: rgb(8, 179, 8);
+    }
+
+.todoCount3 {
+
+    color: #29071c;
+}
+
+.todoCount3 span {
+    color: rgb(7, 78, 100);
+    }
+
+.todoCount3 span + span {
+    color: rgb(82, 2, 104);
+    }
+
+    @media (min-width: 1025px) {
+        .todoCountContainer {
+            display: flex;
+            place-content: center;
+            font-size: 24px;
+            width: 90%;
+        }
+      }
