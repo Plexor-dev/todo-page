@@ -11,9 +11,14 @@ function ModalOpened() {
         <div className="modal-opened-container">
             <button onClick={closeModal} className="close-modal">X</button>
         <form name="modal">
-            <label htmlFor='modal-input' name='modal'> 
-                <input id="modal-input" name='modal' type='text' placeholder='escribe aqui..' className="modal-textarea"/> 
+            <label htmlFor='modal-input' name='modal'> Escribe tu nuevo ToDo..
             </label>
+                <textarea id="modal-input" name='modal'placeholder='Escribe aqui..' className="modal-textarea"/> 
+                <div className="button-container"> 
+                    <button className='add-todo'>Añadir</button>
+                    <button onClick={closeModal} className='close-todo'>Cancelar</button>
+                </div>
+
         </form>
         </div>
     )

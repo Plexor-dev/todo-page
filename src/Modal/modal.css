@@ -1,6 +1,5 @@
 .modal-container {
 /* Fondo oscuro que cubre toda la pantalla */
-
     position: fixed;
     top: 0;
     left: 0;
@@ -10,25 +9,68 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    z-index: 30; /* Asegura que esté por encima de otros elementos */
   
 }
 
 .modal-opened-container {
 /* Contenido del modal centrado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    width: 40%; /* Ocupa la mayor parte de la pantalla */
-    height: 40%; /* Ocupa casi toda la altura */
+    width: 80%; /* Ocupa la mayor parte de la pantalla */
+    height: 60%; /* Ocupa casi toda la altura */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow-y: auto; /* Permite el scroll si el contenido es demasiado grande */
   }
 
-
+  /* Estilo para el textarea dentro del modal */
+.modal-textarea {
+    width: calc(100% - 25px); /* Hace que ocupe todo el ancho disponible */
+    height: 200px;
+    min-height: 150px; /* Controla la altura del textarea */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+     resize: none;
+    /* Evita que se cambie el tamaño del textarea */
+  }
 
   .close-modal {
+    width: 30px;
+    height: 30px;
     padding: 10px 15px;
     margin-top: 20px;
     cursor: pointer;
+    font-size: 14px;
+    text-align: center;
   }
+
+.button-container {
+    display: flex;
+    place-content: space-around;
+    margin-top: 20px;
+  }
+
+.add-todo, .close-todo {
+    border-radius: 25px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.add-todo {
+    color: #ffff;
+    background-color: #1d1f21;
+}
+
+/*
+    Color del botón (verde): #28a745
+    Color del texto: #ffffff
+    Color del fondo oscuro detrás del botón: #1d1f21
+*/
