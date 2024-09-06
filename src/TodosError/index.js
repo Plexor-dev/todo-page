@@ -13,7 +13,7 @@ function TodosError(){
       </div>
       <div className="alert-prompt-wrap">
         <p className="text-sm text-yellow-700">
-          Error, Cannot found the specified resource
+          Error, Cannot found the specified resource 404
         </p>
     </div>
   </div>

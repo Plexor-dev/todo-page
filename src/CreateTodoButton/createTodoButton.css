@@ -24,11 +24,11 @@
     margin: 0;
     font-size: 50px;
     text-align: center;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     position: fixed;
     bottom: 55px;
-    right: 35px;
+    right: 65px;
     z-index: 2;
     transition: transform 0.5s ease-in-out;
 }
@@ -51,7 +51,11 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.todoButton3:hover, .todoButton2:hover, .todoButton1:hover {
-    color:beige;
-    transform: scale(1.5);
-}  
+@media screen and (min-width: 1024px) {
+    .todoButton3:hover, .todoButton2:hover, .todoButton1:hover {
+        color:beige;
+        transform: scale(1.5);
+        cursor: pointer;
+    }  
+}
+

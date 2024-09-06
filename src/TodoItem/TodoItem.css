@@ -27,10 +27,7 @@
     height: 30px;
     background-color: transparent;
     font-size: 24px;
-}
-
-button:hover {
-    color: red;
+    cursor: pointer;
 }
 
 .delete-button {
@@ -38,25 +35,16 @@ button:hover {
     color: black;
 }   
 
-.delete-button:hover {
-    color: red;
-}
 
 .colorGreen {
     color: #4CAF50;
 }
 
-.colorGreen:hover {
-    color: green;
-}
 
 .colorYellow {
     color: #FFA500;
 }
 
-.colorYellow:hover {
-    color: #FFD700;
-}
 
 
 .text-line-through {
@@ -73,7 +61,16 @@ button:hover {
         font-size: 32px;
         color: black;
     }
-
+    .delete-button:hover {
+        color: red;
+    }
+    .colorGreen:hover {
+        color: green;
+    }
+    .colorYellow:hover {
+        color: #FFD700;
+    }
+    
     .item-container {
         margin: 5px auto;
         width: 80%;

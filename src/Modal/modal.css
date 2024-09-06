@@ -18,37 +18,58 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color:  #b7c0c7;
     padding: 20px;
-    border-radius: 8px;
-    width: 80%; /* Ocupa la mayor parte de la pantalla */
-    height: 60%; /* Ocupa casi toda la altura */
+    border-radius: 30px;
+    width: 85%; /* Ocupa la mayor parte de la pantalla */
+    height: 45%; /* Ocupa casi toda la altura */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow-y: auto; /* Permite el scroll si el contenido es demasiado grande */
   }
 
+  .label-container {
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    font-size: 1.2rem;
+    color: #2e2929;
+  }
+
   /* Estilo para el textarea dentro del modal */
 .modal-textarea {
+    margin-top: 10px;
+    background-color: rgba(172, 164, 164, 0.2);;
     width: calc(100% - 25px); /* Hace que ocupe todo el ancho disponible */
     height: 200px;
     min-height: 150px; /* Controla la altura del textarea */
     padding: 10px;
     font-size: 16px;
-    border-radius: 4px;
+    border-radius: 9px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-     resize: none;
+    resize: none;
     /* Evita que se cambie el tamaño del textarea */
   }
 
+  .modal-textarea:focus {
+    outline: 2px solid blueviolet;
+  }
+
   .close-modal {
-    width: 30px;
-    height: 30px;
-    padding: 10px 15px;
-    margin-top: 20px;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
-    font-size: 14px;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 0.6rem;
+    align-self: flex-end;
+    border-radius: 45px;
+    border: none;
+    background-color: rgb(204, 32, 32);
+    color: #ffff;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    transform-origin: center center;
+    will-change: transform;
   }
 
 .button-container {
@@ -58,15 +79,27 @@
   }
 
 .add-todo, .close-todo {
+    border: none;
     border-radius: 25px;
-    width: 80px;
-    height: 40px;
+    width: 100px;
+    height: 60px;
     cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    transform-origin: center center;
+    transform: scale(1.);
+    transition: transform 0.6s ease;
+    will-change: transform;
 }
 
 .add-todo {
     color: #ffff;
-    background-color: #1d1f21;
+    background-color:#28a745;
+}
+
+.close-todo {
+  color: #ffff;
+  background-color: rgb(207, 0, 0);
 }
 
 /*
@@ -74,3 +107,28 @@
     Color del texto: #ffffff
     Color del fondo oscuro detrás del botón: #1d1f21
 */
+
+@media only screen and (min-width: 1024px) {
+  .modal-opened-container {
+    
+    width: 30%;
+    height: 65%;
+  }
+
+  .modal-textarea {
+    
+    width: 100%;
+    height: 90%;
+  }
+
+
+
+  .close-modal:hover {
+    transform: scale(1.5);
+    
+  }
+
+  .add-todo:hover, .close-todo:hover {
+    transform: scale(1.3);
+  }
+}
