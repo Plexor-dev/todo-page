@@ -28,7 +28,7 @@ function UseMockApi(itemName, initialValue) {
           setLoading(false);
           setError(true);
         });
-    }, 2000);
+    }, 2000); //un settimeout para esperar un poco y ver la animacion
   }, [itemName, initialValue, apiUrl]);
 
   const saveItem = (newTodos) => {
