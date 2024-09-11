@@ -6,7 +6,7 @@ const TodoContext = React.createContext();
 
 function TodoProvider({children}){
 
-  const [ openModal, setOpenModal ]= React.useState(!false);
+  const [ openModal, setOpenModal ]= React.useState(false);
 
     const {item: todos, 
         saveItem: saveTodos,
